@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>One click</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="page, keywords">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+      @charset "UTF-8";html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:#fff;color:#666}body{margin:0}pre{margin:0 0 20px}pre{font:.875rem/1.5 Consolas,monaco,monospace;color:#666;-moz-tab-size:4;-o-tab-size:4;tab-size:4;overflow:auto;padding:10px;border:1px solid #e5e5e5;border-radius:3px;background:#fff}::-webkit-scrollbar-button{background-repeat:no-repeat;width:10px;height:0}::-webkit-scrollbar-track{background-color:#fff}::-webkit-scrollbar-thumb{border-radius:50px;background-color:#ec879f}::-webkit-scrollbar-thumb:hover{background-color:#cc4968}::-webkit-resizer{background-repeat:no-repeat;width:10px;height:0}::-webkit-scrollbar{width:10px}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;-webkit-animation:w 1.5s;animation:w 1.5s;background-color:#fef7f8}@keyframes w{0%{opacity:0}to{opacity:1}}
+    </style>
+    <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script><link rel="apple-touch-icon" sizes="57x57" href="img/png/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/png/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/png/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/png/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/png/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/png/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/png/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/png/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/png/apple-icon-180x180.png">
+<link rel="icon" type="img/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="icon" type="img/png" sizes="32x32" href="img/png/favicon-32x32.png">
+<link rel="icon" type="img/png" sizes="96x96" href="img/png/favicon-96x96.png">
+<link rel="icon" type="img/png" sizes="16x16" href="img/png/favicon-16x16.png">
+<link rel="icon" href="img/png/favicon.ico" type="img/x-icon">
+<link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <section class="blur">
+      <header uk-sticky="top: 500; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+        <nav class="uk-container" uk-navbar="">
+          <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo uk-margin-medium-right" href="#"><img src="img/svg/logo.svg" alt="" width="70"></a>
+            <ul class="uk-navbar-nav uk-visible@m">
+              <li class="uk-active"><a href="#">САЛОНЫ</a></li>
+              <li><a href="#" uk-toggle="target: #enter">ВХОД</a></li>
+              <li><a href="#" uk-toggle="target: #registration">РЕГИСТРАЦИЯ</a></li>
+            </ul>
+          </div>
+          <div class="uk-navbar-right">
+            <div class="uk-visible@m">
+              <form class="uk-search uk-search-default">
+                <button class="uk-search-icon-flip" uk-search-icon=""></button>
+                <input class="uk-search-input" type="search" placeholder="Поиск салона...">
+              </form>
+            </div>
+            <div class="uk-hidden@m"><span uk-icon="icon: grid"></span>
+              <div class="mobile-drop-down" uk-dropdown="pos: bottom-center; mode: click; offset: 28">
+                <div class="uk-margin-medium-bottom">
+                  <ul class="uk-nav uk-dropdown-nav uk-text-center">
+                    <li class="uk-active"><a href="#">САЛОНЫ</a></li>
+                    <li><a href="#" uk-toggle="target: #enter">ВХОД</a></li>
+                    <li><a href="#" uk-toggle="target: #registration">РЕГИСТРАЦИЯ</a></li>
+                  </ul>
+                </div>
+                <form class="uk-search uk-search-default">
+                  <button class="uk-search-icon-flip" uk-search-icon=""></button>
+                  <input class="uk-search-input" type="search" placeholder="Поиск салона...">
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="home-bg">
+        <div class="uk-background-cover uk-flex uk-flex-middle" style="background-image: url(img/png/bg.png);">
+          <div class="uk-width-1-1">
+            <div class="uk-container">
+              <h1>Все салоны вашего <br> города в одном месте,<br> запишитесь в один клик!</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- This is the modal enter-->
+      <div id="enter" uk-modal="">
+        <div class="uk-modal-dialog uk-modal-body">
+          <button class="uk-modal-close-default" type="button" uk-close=""></button>
+          <h2 class="uk-modal-title uk-text-center">ВХОД</h2>
+          <form action="">
+            <div class="uk-margin">
+              <input class="uk-input" type="email" placeholder="E-mail">
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input" type="password" placeholder="Пароль">
+            </div>
+            <div class="uk-grid uk-child-width-1-2@s uk-grid-small social" uk-grid="">
+              <div><a class="uk-flex uk-flex-between uk-box-shadow-hover-large fb" href="">Войти через<i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+              <div><a class="uk-flex uk-flex-between uk-box-shadow-hover-large gg" href="">Войти через<i class="fa fa-google" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="uk-margin uk-text-center forgot-password">
+              <div><a href="">Забыли пароль?</a></div>
+              <div><a href="">Нет аккаунта?</a></div>
+            </div>
+            <div class="uk-margin submit-btn uk-margin-auto uk-flex-center uk-width-3-4@s">
+              <button type="submit">Войти</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- This is the modal registration-->
+      <div id="registration" uk-modal="">
+        <div class="uk-modal-dialog uk-modal-body">
+          <button class="uk-modal-close-default" type="button" uk-close=""></button>
+          <h2 class="uk-modal-title uk-text-center">Регистрация</h2>
+          <form action="">
+            <div class="uk-margin">
+              <input class="uk-input" type="text" placeholder="ФИО">
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input" type="email" placeholder="E-mail">
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input" type="password" placeholder="Пароль">
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input" type="password" placeholder="Повторите пароль">
+            </div>
+            <div class="uk-grid uk-child-width-1-2@s uk-grid-small social" uk-grid="">
+              <div><a class="uk-flex uk-flex-between uk-box-shadow-hover-large fb" href="">Войти через<i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+              <div><a class="uk-flex uk-flex-between uk-box-shadow-hover-large gg" href="">Войти через<i class="fa fa-google" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="uk-margin uk-text-center forgot-password">
+              <div><a href="">Забыли пароль?</a></div>
+              <div><a href="">Нет аккаунта?</a></div>
+            </div>
+            <div class="uk-margin submit-btn uk-margin-auto uk-flex-center uk-width-3-4@s">
+              <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- This is the modal schedule-->
+      <div class="uk-flex-top modal-schedule" id="modal-center" uk-modal="">
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+          <button class="uk-modal-close-default" type="button" uk-close=""></button>
+          <form>
+            <fieldset class="uk-fieldset">
+              <div class="uk-text-center uk-margin">
+                <legend class="uk-legend">ЗАПИСАТЬСЯ</legend>
+                <p class="uk-margin-remove">Запись на 13.2.2018 09:30</p>
+              </div>
+              <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Ф.И.О">
+              </div>
+              <div class="uk-margin">
+                <input class="uk-input phone-mask" type="text" placeholder="Телефон">
+              </div>
+              <div class="uk-margin">
+                <button class="uk-button-default uk-button">Записаться</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <!-- This is the modal rating-->
+      <div class="uk-flex-top modal-schedule" id="modal-reviews" uk-modal="">
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+          <button class="uk-modal-close-default" type="button" uk-close=""></button>
+          <form>
+            <fieldset class="uk-fieldset uk-text-center">
+              <div class="margin">
+                <label class="uk-margin-small-bottom uk-display-block">Поставьте ваш рейтинг мастеру</label>
+                <select class="rating-salon">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="uk-margin">
+                <label class="uk-margin-small-bottom uk-display-block">Ваше имя</label>
+                <input class="uk-input" type="text">
+              </div>
+              <div class="uk-margin">
+                <label class="uk-margin-small-bottom uk-display-block">Оставьте свой отзыв о мастере</label>
+                <textarea class="uk-textarea" name="" rows="10"></textarea>
+              </div>
+              <div class="uk-margin">
+                <button class="uk-button-default uk-button">Отправить</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <script src="js/libs.min.js"></script>
+      <script src="js/common.min.js"></script>
+    </section>
+  </body>
+</html>
